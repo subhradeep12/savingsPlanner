@@ -1,0 +1,11 @@
+html{
+    padding: -1%;
+    margin: -1%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 760px;
+    width: 1543px;
+}

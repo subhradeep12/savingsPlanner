@@ -1,0 +1,40 @@
+
+img{
+    height: 100%;
+    width: 50%;
+}
+
+#inp{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+.toggle{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding: 2% 15%;
+    background-color: rgb(30, 181, 156);
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+    border-left: 2px solid white;
+    cursor: pointer;
+}
+p{
+    float: left;
+    width: 40%;
+}
+.in{
+    padding: 2% 2%;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.3);
+}
+*:focus {outline:none !important}
+
+#log, #signup{
+    padding-left: 10%;
+}
+
