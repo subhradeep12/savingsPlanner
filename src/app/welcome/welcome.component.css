@@ -2,16 +2,18 @@
 img{
     height: 100%;
     width: 50%;
+    background-color: white;
 }
 
 #inp{
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 51%;
     height: 100%;
+    background-color: white;
 }
-.toggle{
+#logg,#sign{
     margin-top: 20%;
     margin-bottom: 10%;
     padding: 2% 15%;
@@ -20,21 +22,155 @@ img{
     font-weight: bolder;
     font-size: larger;
     border: none;
-    border-left: 2px solid white;
     cursor: pointer;
+    transition: 2s ease;
 }
-p{
+.name{
     float: left;
-    width: 40%;
+    width: 50%;
 }
 .in{
-    padding: 2% 2%;
-    border:0;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.3);
+    border: 0;
+    border-bottom: 1px solid black;
+    transition: 3s;
+}
+p{
+    margin-top: 6%;
+    padding-left: 5%;
 }
 *:focus {outline:none !important}
 
-#log, #signup{
+#log, #signup, #login{
     padding-left: 10%;
 }
+label{
+    position: absolute;
+    font-size: 90%;
+    cursor: text;
+    left: 14.5%;
+}
+#fname{
+    top: 40%;
+    transition: 2s;
+}
+#uname{
+    top: 40%;
+    transition: 2s;
+}
+#lname{
+    top: 48.6%;
+    transition: 2s;
+}
+#pass{
+    top: 48.3%;
+    transition: 2s;
+}
+#mail{
+    top: 56.8%;
+    transition: 2s;
+}
+#cpass{
+    top: 65%;
+    transition: 2s;
+}
+#repass{
+    top: 73%;
+    transition: 2s;
+}
 
+.in:focus + #fname
+{
+    color: rgb(32, 107, 107);
+    top: 37%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+.in:focus + #uname
+{
+    color: rgb(32, 107, 107);
+    top: 38%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+.in:focus + #lname
+{
+    color: rgb(32, 107, 107);
+    top: 45.5%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+
+.in:focus + #pass
+{
+    color: rgb(32, 107, 107);
+    top: 45.5%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+.in:focus + #mail
+{
+    color: rgb(32, 107, 107);
+    top: 53.6%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+.in:focus + #cpass
+{
+    color: rgb(32, 107, 107);
+    top: 62%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+.in:focus + #repass
+{
+    color: rgb(32, 107, 107);
+    top: 70%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+.in:focus{
+    border-bottom: 3px solid rgb(32, 107, 107);
+}
+
+#sub
+{
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 2% 25%;
+    background-color: rgb(30, 181, 156);
+    border: none;
+    box-shadow: 2px 5px #666;
+    border-radius: 20px;
+    transition: 2s;
+    color: white;
+    font-weight: bolder;
+    font-size: 110%;
+    cursor: pointer;
+}
+#sub:hover{
+    background-color: aqua;
+}
+#sub:active{
+    box-shadow: none;
+    margin-top: 6%;
+}
+
+h1{
+    position: absolute;
+    top: 5%;
+    right: 17%;
+    font-size: 220%;
+    font-weight: bolder;
+    color: rgb(30, 181, 156);
+}
+a{
+    position: absolute;
+    right: 20%;
+}
+button:hover{
+    background-color: aqua;
+}
+#sign
+{
+    border-left: 3px solid white;
+}
