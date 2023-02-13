@@ -21,10 +21,10 @@ export class WelcomeComponent {
   }
   onSubmitSignup(fname: any, lname: any, mail: any, cpass: any, repass: any)
   {
-    this.router.navigate(["/comp-int"])
+    this.router.navigate(["/options"])
   }
   onSubmitLogin(uname: any, pass: any)
   {
-    this.router.navigate(["/comp-int"])
+    this.router.navigate(["/options"])
   }
 }

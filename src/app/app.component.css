@@ -1,9 +1,9 @@
 html{
-    padding: -1%;
+    padding: -2%;
     margin: -1%;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #666;
+    background-color: #333;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,0 +1,70 @@
+.dotwhite {
+    height: 10px;
+    width: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.dot{
+    height: 10px;
+    width: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+  }
+#bottleft{
+    position: absolute;
+    top: 90%;
+  }
+#bottright{
+    position: absolute;
+    top: 90%;
+    right: 0;
+}
+#topright{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#vl
+{
+    width: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #bbb;
+    height: 600px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+}
+#hl
+{
+    height: 4px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #bbb;
+    width: 1100px;
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+}
+#compint{
+    position: absolute;
+    left: 20%;
+}
+#tax{
+    position: absolute;
+    top: 12%;
+    right: 25%;
+}
+#ircalc{
+    position: absolute;
+    bottom: 8.5%;
+    left: 25%;
+}
