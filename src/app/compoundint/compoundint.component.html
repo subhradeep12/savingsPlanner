@@ -1,1 +1,32 @@
-<p>Compound interest works</p>
+<h1 style="text-align: center; color: white;">
+    COMPOUND INTEREST CALCULATOR
+</h1>
+<div id="req">
+    <p>
+    <label for="">Initial Investment: </label>
+    <input type="number" name="" id="" min="0" #ii>
+    </p>
+    <p>
+    <label for="">Monthly Investment: </label>
+    <input type="number" name="" id="" min="0" #mi>
+    </p>
+    <p>
+    <label for="">Rate of Interest: </label>
+    <input type="number" min="0" #roi>
+    </p>
+    <p>
+    <label for="">Years of Investing: </label>
+    <input type="number" min="0" #yoing (change) = "onChange(yoing.value)">
+    </p>
+    <p>
+    <label for="">Total Years of Investment: </label>
+    <input type="number" min="{{inving}}" #yoiment>
+    </p>
+    <br>
+
+    <button (click) = "onClick(ii.value,mi.value, roi.value, yoing.value, yoiment.value)">
+        Calculate
+    </button>
+</div>
+<div>{{np}}</div>
+<div style="position: absolute; left: 20%;" *ngIf = "abc">{{principal}}</div>

@@ -188,15 +188,19 @@
 <div id="hl"></div>
 
 <div id="compint">
-    <img src="/assets/images/compint1.png" alt="" width="400px">
-    <h2 style="color: white; margin-left: 20%; margin-top: 0%;">Compound Interest</h2>
+    <img src="/assets/images/compint1.png" alt="" width="400px" (mouseover) = "onHover(1)" (mouseout) = "out()" (click) = "onClickCompInt()">
+    <h2 style="color: white; margin-left: 10%; margin-top: 0%;" *ngIf = "num === 1">Compound Interest Calculator</h2>
 </div>
 
 <div id="tax">
-    <img src="/assets/images/tax.png" alt="" width="250px">
-    <h2 style="color: white; margin-left: 40%; margin-top: 0%;">Tax</h2>
+    <img src="/assets/images/tax.png" alt="" width="250px" (mouseover) = "onHover(2)" (mouseout) = "out()" (click) = "onClickTax()">
+    <h2 style="color: white; margin-left: 20%; margin-top: 0%;" *ngIf = "num === 2">Tax Calculator</h2>
 </div>
 <div id="ircalc">
-    <h2 style="color: white; margin-bottom: 0%;">Interest Rate Calculator</h2>
-    <img src="/assets/images/tax.png" alt="" width="250px">
+    <h2 style="color: white; margin-bottom: 0%;" *ngIf = "num === 3">Interest Rate Calculator</h2>
+    <img src="/assets/images/rate.png" alt="" width="250px" (mouseover) = "onHover(3)" (mouseout) = "out()" (click) = "onClickRate()">
+</div>
+<div id="target">
+    <h2 style="color: white; margin-bottom: 0%; margin-left: 20%;" *ngIf = "num === 4">Target Planner</h2>
+    <img src="/assets/images/target.png" alt="" width="250px" (mouseover) = "onHover(4)" (mouseout) = "out()" (click) = "onClickTarget()">
 </div>

@@ -57,14 +57,23 @@
 #compint{
     position: absolute;
     left: 20%;
+    cursor: pointer;
 }
 #tax{
     position: absolute;
     top: 12%;
     right: 25%;
+    cursor: pointer;
 }
 #ircalc{
     position: absolute;
     bottom: 8.5%;
     left: 25%;
+    cursor: pointer;
+}
+#target{
+    position: absolute;
+    bottom: 8.5%;
+    right: 25%;
+    cursor: pointer;
 }
