@@ -9,24 +9,44 @@
     <p>
     <label for="">Monthly Investment: </label>
     <input type="number" name="" id="" min="0" #mi>
+    <br>
+    <b style="position: absolute;left: 30% ;color: red">{{outputamt}}</b>
     </p>
     <p>
     <label for="">Rate of Interest: </label>
     <input type="number" min="0" #roi>
+    <br>
+    <b style="position:absolute ;left: 40%; color: red;">{{outputroi}}</b>
     </p>
     <p>
     <label for="">Years of Investing: </label>
     <input type="number" min="0" #yoing (change) = "onChange(yoing.value)">
+    <br>
+    <b style="position: absolute;left: 40%; color: red;">{{outputyoing}}</b>
     </p>
     <p>
     <label for="">Total Years of Investment: </label>
     <input type="number" min="{{inving}}" #yoiment>
+    <br>
+    <b style="position: absolute; left: 15%; color: red;">{{np}}</b>
+    </p>
+    <p>
+        <label for="">By how much percentage do you want to increase your Investment: </label>
+        <input type="number" min=0 #rateincr id="incr">
     </p>
     <br>
-
-    <button (click) = "onClick(ii.value,mi.value, roi.value, yoing.value, yoiment.value)">
+    <button (click) = "onClick(ii.value,mi.value, roi.value, yoing.value, yoiment.value, rateincr.value)">
         Calculate
     </button>
+    <br>
+    <br>
+    <br>
 </div>
-<div>{{np}}</div>
-<div style="position: absolute; left: 20%;" *ngIf = "abc">{{principal}}</div>
+
+    <div id="resulttext" *ngIf = abc style="text-align: center;">
+        <button style="position:absolute; bottom: 2%; right : 50%" (click) = "onClose()">CLOSE</button>
+        <p>Total Amount after {{invment}} years of Investment =  {{principal}}</p>
+        <p>Total Invested Amount = {{invamt}}</p>
+        <p>Total Interest earned = {{principal - invamt}}</p>
+    </div>
+    
